@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./voucher.css">
 </head>
 <body>
@@ -18,10 +21,56 @@
     <div class="main-area">
         <div class="main-left-section">
             <div class="voucher-details-section">
-                Voucher Detail Section
+                <div class="voucher-info">
+                    <div class="voucher-name">Sale</div>
+                    <div class="voucher-number">
+                        <div class="details-heading" style="width: fit-content;">No.</div>
+                        <input class="details" value="02" placeholder=""/>
+                    </div>
+                    <div class="voucher-date">
+                        <input class="date details" value="28/05/2025" placeholder=""/>
+                        <div class="day">Friday</div>
+                    </div>
+                </div>
+                <div class="details-section">
+                    <div class="section">
+                        <div class="voucher-detail">
+                            <div voucher-detail>
+                                <div class="details-heading">Party Account Name</div>
+                                <div class="details-sub-heading">Current balance</div>
+                            </div>
+                            <div voucher-detail>
+                                <input class="details" value="Cash" placeholder=""/>
+                                <div class="sub-details">5500.00</div>
+                            </div>
+                        </div>
+                        <div class="voucher-detail">
+                            <div voucher-detail>
+                                <div class="details-heading">Party Account Name</div>
+                                <div class="details-sub-heading">Current balance</div>
+                            </div>
+                            <div voucher-detail>
+                                <input class="details" value="Cash" placeholder=""/>
+                                <div class="sub-details">5500.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="voucher-entries-section">
-                Voucher Entries Section
+                <div class="entry-heading">
+                    <div class="entry-heading-left">
+                        <div class="heading sr">Sr.No.</div>
+                        <div class="heading item-name">Item Name</div>
+                    </div>
+                    <div class="entry-heading-right">
+                        <div class="heading quantity">Quantity</div>
+                        <div class="heading price">Price</div>
+                        <div class="heading amount">Amount</div>
+                    </div>
+                </div>
+                <div class="entry-items">Entries</div>
+                <div class="entry-subtotal">Entry Subtotal</div>
             </div>
             <div class="voucher-tax-section">
                 Voucher Tax Section

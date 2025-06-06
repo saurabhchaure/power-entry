@@ -1,11 +1,19 @@
 :root {
-    --primary-color: #1f34bb;
+    --primary-color: #007AFF;
     --secondary-color: #2C2C2C;
-    --accent-color: #1f34bb;
-    --bg-color: black;
+    --accent-color: #2C2C2C;
+    --bg-color: #1E1E1E;
     --font-color: white;
+    --error-color: #FF3B30;
+    --alert-color: #FF9500;
+    --success-color: #34C759;
 }
+
 * {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
     background: var(--bg-color);
     color: var(--font-color);
     padding: 0;
@@ -19,6 +27,28 @@ body {
     height: 100dvh;
 }
 
+input {
+    display: inherit;
+    border: none;
+    color: var(--font-color);
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 1.8rem;
+}
+
+input:focus {
+    outline: 1px solid white;
+    outline-offset: -1px;
+    background-color: var(--accent-color);
+    border-radius: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0rem 0.3rem;
+}
+
+
+/* Top and Bottom Bar */
 .top-bar, .bottom-bar {
     display: flex;
     justify-content: space-between;
@@ -48,11 +78,13 @@ body {
     background-color: inherit;
 }
 
+
+/* Main Area */
+
 .main-area {
     flex: 1;
     display: flex;
     justify-content: space-between;
-    padding: .0rem .5rem;
 }
 
 .main-left-section {
@@ -60,4 +92,157 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.voucher-details-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: solid 2px var(--secondary-color);
+}
+
+.voucher-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+
+.voucher-name {
+    display: flex;
+    background-color: var(--primary-color);
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.voucher-number {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+}
+
+.voucher-date {
+    display: flex;
+    flex-direction: column;
+    padding-right: .5rem;
+}
+
+.date {
+    flex-wrap: wrap;
+    justify-items: right;
+}
+.day {
+    display: flex;
+    font-size: .9rem;
+    justify-content: right;
+}
+
+.details-heading {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    width: 10rem;
+    height: 1.8rem;
+    justify-self: center;
+}
+
+.details-heading::after {
+    content: ":";
+}
+
+.details {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.details-section {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.voucher-detail {
+    display: flex;
+    gap: 1rem;
+    padding: 0.1rem .5rem;
+}
+
+.details-sub-heading, .sub-details{
+    font-size: .9rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.voucher-entries-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.entry-heading {
+    display: flex;
+    padding: .4rem .5rem;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--secondary-color);
+    gap: 1rem;
+}
+
+.entry-heading-left {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+}
+
+.sr {
+    width: 5rem;
+    display: flex;
+    justify-content: start;
+}
+
+.item-name {
+    flex: 1;
+}
+
+.quantity {
+    width: 10rem;
+    display: flex;
+    justify-content: end;
+}
+
+.price {
+    width: 10rem;
+    display: flex;
+    justify-content: end;
+}
+
+.amount {
+    width: 15rem;
+    display: flex;
+    justify-content: end;
+}
+
+.entry-heading-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.entry-items{
+    flex: 1;
+}
+
+.voucher-tax-section {
+    display: flex;
+    flex: 1;
+}
+
+/* Main Right Bar */
+
+.main-right-bar {
+    border-left: solid 2px var(--secondary-color);
+    width: 12rem;
 }
